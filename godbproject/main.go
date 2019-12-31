@@ -8,14 +8,14 @@ import (
 func main() {
 	fmt.Println("欢迎进入管理系统")
 	for {
-		fmt.Println("请选择功能：1增加员工；2删除员工 ；3根据id修改员工信息 ；4查询所有员工 ；5退出")
+		fmt.Println("请选择功能：1删除员工；2增加员工 ；3根据id修改员工信息 ；4查询所有员工 ；5退出")
 		var i int
 		fmt.Scanln(&i)
 		switch i {
 		case 1:
-			service.Insert()
-		case 2:
 			service.Delete()
+		case 2:
+			service.Insert()
 		case 3:
 			service.Update()
 		case 4:
