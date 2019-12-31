@@ -22,10 +22,7 @@ func main() {
 			service.Query()
 		case 5:
 			goto Zaijian
-		case 6:
-			goto Zaijian
-		case 7:
-			goto Zaijian
+
 		default:
 			fmt.Println("输入错误，请重新输入")
 		}
